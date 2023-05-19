@@ -1,3 +1,9 @@
+import { Main } from '@/pages';
+
 export const App = () => {
-  return <div>123</div>;
+  return (
+    <>
+      <Main />
+    </>
+  );
 };
