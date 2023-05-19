@@ -1,3 +1,5 @@
+import { Timer } from '@/widgets';
+
 import * as S from './components';
 
 export const Main = () => {
@@ -12,7 +14,7 @@ export const Main = () => {
         </S.Subtitle>
       </S.TitleWrapper>
 
-      <S.Timer>TIMER</S.Timer>
+      <Timer />
     </S.Container>
   );
 };
