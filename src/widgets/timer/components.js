@@ -23,4 +23,5 @@ export const TimeUnderline = styled.div`
   background-repeat: no-repeat;
   width: 132px;
   height: 54px;
+  margin-top: -20px;
 `;

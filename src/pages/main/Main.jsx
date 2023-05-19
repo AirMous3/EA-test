@@ -15,6 +15,20 @@ export const Main = () => {
       </S.TitleWrapper>
 
       <Timer />
+
+      <S.EventInfo>Check our event page when you wait:</S.EventInfo>
+      <S.EventButton>Go to the event</S.EventButton>
+
+      <S.GetStarted>
+        <S.InputWrapper>
+          <S.GetStartedInput
+            type="text"
+            placeholder="Enter your Email and get notified"
+          />
+
+          <S.ArrowInputButton />
+        </S.InputWrapper>
+      </S.GetStarted>
     </S.Container>
   );
 };
