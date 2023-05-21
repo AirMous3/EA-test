@@ -57,6 +57,7 @@ export const LeftCornerImage = styled.div`
   animation: ${leftCornerFadeIn} 1s;
   animation-delay: 0.3s;
   animation-fill-mode: backwards;
+  z-index: -1;
 
   @media (max-width: 1200px) {
     background-size: 250px;
@@ -81,6 +82,7 @@ export const RightCornerImage = styled.div`
   animation: ${rightCornerFadeIn} 1s;
   animation-delay: 0.3s;
   animation-fill-mode: backwards;
+  z-index: -1;
 
   @media (max-width: 1200px) {
     background-size: 360px 310px;
