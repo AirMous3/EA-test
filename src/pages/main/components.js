@@ -125,6 +125,7 @@ export const GetStarted = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   @media (min-width: 1280px) {
     position: fixed;
@@ -139,6 +140,7 @@ export const GetStarted = styled.div`
 `;
 
 export const InputWrapper = styled.div`
+  position: relative;
   max-height: 59px;
   min-width: 440px;
   max-width: 440px;
@@ -202,4 +204,10 @@ export const ArrowInputButton = styled.button`
     height: 33px;
     width: 33px;
   }
+`;
+
+export const Error = styled.div`
+  position: absolute;
+  bottom: -30px;
+  color: red;
 `;

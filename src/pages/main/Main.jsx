@@ -1,8 +1,29 @@
+import { useContext, useState } from 'react';
+
+import { isEmailValid } from '@/features';
+import { ModalContext } from '@/shared';
 import { Timer } from '@/widgets';
 
 import * as S from './components';
 
 export const Main = () => {
+  const { setVisible } = useContext(ModalContext);
+  const [inputText, setInputText] = useState('');
+  const [error, setError] = useState(false);
+
+  const handleChangeInputText = (e) => {
+    setInputText(e.currentTarget.value);
+    setError(false);
+  };
+  const handleSendEmail = () => {
+    if (isEmailValid(inputText)) {
+      setVisible(true);
+      setInputText('');
+    } else {
+      setError(true);
+    }
+  };
+
   return (
     <S.Container>
       <S.Logo />
@@ -17,16 +38,27 @@ export const Main = () => {
       <Timer />
 
       <S.EventInfo>Check our event page when you wait:</S.EventInfo>
-      <S.EventButton>Go to the event</S.EventButton>
+      <S.EventButton>
+        <a
+          href="https://leadadvisors.org/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Go to the event
+        </a>
+      </S.EventButton>
 
       <S.GetStarted>
         <S.InputWrapper>
           <S.GetStartedInput
             type="text"
             placeholder="Enter your Email and get notified"
+            value={inputText}
+            onChange={(e) => handleChangeInputText(e)}
           />
 
-          <S.ArrowInputButton />
+          <S.ArrowInputButton onClick={handleSendEmail} />
+          {error && <S.Error>Woops, check your email</S.Error>}
         </S.InputWrapper>
       </S.GetStarted>
     </S.Container>
