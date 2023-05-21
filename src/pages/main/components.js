@@ -13,6 +13,15 @@ export const Container = styled.section`
   background-image: url(${backLeftCorner}), url(${backRightCorner});
   background-position: left 0 top 0, right 0 top 0;
   background-repeat: no-repeat;
+
+  @media (max-width: 1200px) {
+    background-size: 200px;
+    background-position: left 0 top -15px, right 0 top 0;
+  }
+  @media (max-width: 480px) {
+    background-size: 188px 165px, 267px 252px;
+    background-position: left -14px top -21px, right -61px top -6px;
+  }
 `;
 
 export const Logo = styled.div`
@@ -22,6 +31,12 @@ export const Logo = styled.div`
   height: 60px;
   margin-top: 60px;
   margin-bottom: 74px;
+
+  @media (max-width: 480px) {
+    margin-bottom: 55px;
+    background-size: 132px;
+    background-position: bottom;
+  }
 `;
 
 export const TitleWrapper = styled.div`
@@ -40,6 +55,15 @@ export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.text.darkBlue};
   opacity: 0.39;
   text-transform: uppercase;
+
+  @media (max-width: 860px) {
+    font-size: 36px;
+  }
+  @media (max-width: 480px) {
+    line-height: 104%;
+    margin-top: 12px;
+    margin-bottom: 15px;
+  }
 `;
 
 export const Subtitle = styled.h4`
@@ -48,6 +72,11 @@ export const Subtitle = styled.h4`
   line-height: 150%;
   color: rgba(0, 0, 0, 0.8);
   max-width: 425px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    max-width: 286px;
+  }
 `;
 
 export const EventInfo = styled.div`
@@ -55,6 +84,11 @@ export const EventInfo = styled.div`
   font-size: 18px;
   color: rgba(0, 0, 0, 0.8);
   margin-top: 72px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    margin-top: 40px;
+  }
 `;
 
 export const EventButton = styled.button`
@@ -85,30 +119,48 @@ export const EventButton = styled.button`
 `;
 
 export const GetStarted = styled.div`
-  position: fixed;
-  bottom: 0;
   height: 192px;
   width: 100%;
   background: ${({ theme }) => theme.colors.background.darkBlue};
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 1280px) {
+    position: fixed;
+    bottom: 0;
+  }
+  @media (max-width: 768px) {
+    height: 160px;
+  }
+  @media (max-width: 480px) {
+    height: 141px;
+  }
 `;
 
 export const InputWrapper = styled.div`
   max-height: 59px;
   min-width: 440px;
+  max-width: 440px;
   display: flex;
   align-items: center;
   background: ${({ theme }) => theme.colors.background.white};
   border-radius: 40px;
   border: 1px solid rgba(0, 0, 0, 0.8);
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
-  padding-left: 27px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-right: 8px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+  padding: 16px 8px 16px 15px;
   box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    min-width: 360px;
+    max-width: 360px;
+    max-height: 41px;
+  }
+
+  @media (max-width: 480px) {
+    min-width: 280px;
+    max-width: 280px;
+  }
 `;
 
 export const GetStartedInput = styled.input`
@@ -119,6 +171,12 @@ export const GetStartedInput = styled.input`
   &::placeholder {
     font-weight: 400;
     font-size: 18px;
+  }
+
+  @media (max-width: 768px) {
+    &::placeholder {
+      font-size: 14px;
+    }
   }
 `;
 
@@ -138,5 +196,10 @@ export const ArrowInputButton = styled.button`
     width: 20px;
     background-image: url(${arrowIcon});
     background-repeat: no-repeat;
+  }
+
+  @media (max-width: 768px) {
+    height: 33px;
+    width: 33px;
   }
 `;
