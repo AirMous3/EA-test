@@ -1,26 +1,95 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import arrowIcon from '@/shared/assets/arrow-icon.svg';
 import backLeftCorner from '@/shared/assets/back-left-corner.png';
 import backRightCorner from '@/shared/assets/back-right-corner.png';
 import logo from '@/shared/assets/logo.png';
 
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+const leftCornerFadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translate(-100px, -100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+`;
+
+const rightCornerFadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(100px, -100px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`;
 export const Container = styled.section`
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-image: url(${backLeftCorner}), url(${backRightCorner});
-  background-position: left 0 top 0, right 0 top 0;
+`;
+
+export const LeftCornerImage = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(${backLeftCorner});
+  background-position: left 0 top 0;
   background-repeat: no-repeat;
+  width: 565px;
+  height: 714px;
+  animation: ${leftCornerFadeIn} 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: backwards;
 
   @media (max-width: 1200px) {
-    background-size: 200px;
-    background-position: left 0 top -15px, right 0 top 0;
+    background-size: 250px;
+    background-position: left -8px top -15px;
   }
-  @media (max-width: 480px) {
-    background-size: 188px 165px, 267px 252px;
-    background-position: left -14px top -21px, right -61px top -6px;
+
+  @media (max-width: 560px) {
+    background-size: 188px 165px;
+    background-position: left -14px top -21px;
+  }
+`;
+
+export const RightCornerImage = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url(${backRightCorner});
+  background-position: right 0 top 0;
+  background-repeat: no-repeat;
+  height: 714px;
+  width: 864px;
+  animation: ${rightCornerFadeIn} 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: backwards;
+
+  @media (max-width: 1200px) {
+    background-size: 360px 310px;
+    background-position: right -65px top 0px;
+  }
+
+  @media (max-width: 560px) {
+    background-size: 267px 252px;
+    background-position: right -61px top -6px;
   }
 `;
 
@@ -31,6 +100,7 @@ export const Logo = styled.div`
   height: 60px;
   margin-top: 60px;
   margin-bottom: 74px;
+  animation: ${fadeIn} 1s;
 
   @media (max-width: 480px) {
     margin-bottom: 55px;
@@ -45,8 +115,12 @@ export const TitleWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 15px;
+  line-height: 104px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  animation: ${fadeIn} 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: backwards;
 `;
 
 export const Title = styled.h1`
@@ -77,6 +151,15 @@ export const Subtitle = styled.h4`
     font-size: 16px;
     max-width: 286px;
   }
+`;
+
+export const EventInfoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: ${fadeIn} 1s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
 `;
 
 export const EventInfo = styled.div`

@@ -26,6 +26,8 @@ export const Main = () => {
 
   return (
     <S.Container>
+      <S.LeftCornerImage />
+      <S.RightCornerImage />
       <S.Logo />
 
       <S.TitleWrapper>
@@ -37,16 +39,18 @@ export const Main = () => {
 
       <Timer />
 
-      <S.EventInfo>Check our event page when you wait:</S.EventInfo>
-      <S.EventButton>
-        <a
-          href="https://leadadvisors.org/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Go to the event
-        </a>
-      </S.EventButton>
+      <S.EventInfoWrapper>
+        <S.EventInfo>Check our event page when you wait:</S.EventInfo>
+        <S.EventButton>
+          <a
+            href="https://leadadvisors.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Go to the event
+          </a>
+        </S.EventButton>
+      </S.EventInfoWrapper>
 
       <S.GetStarted>
         <S.InputWrapper>
