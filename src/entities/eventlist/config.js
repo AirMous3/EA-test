@@ -7,7 +7,7 @@ import systemDesign from '@/shared/assets/system-design.jpg';
 
 export const eventsConfig = [
   {
-    title: 'Hawaii Party',
+    title: 'Hawaiian Party',
     date: '13.02.2023',
     img: hawaiParty,
     id: 1,

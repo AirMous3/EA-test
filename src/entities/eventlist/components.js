@@ -4,6 +4,7 @@ export const Container = styled.div`
   min-height: 100vh;
   width: 100%;
   text-align: center;
+  font-family: 'San Francisco Pro', sans-serif;
 `;
 
 export const Title = styled.h2`
@@ -111,11 +112,9 @@ export const AccordionTitle = styled.span`
   position: absolute;
   transform: rotate(270deg);
   color: #fff;
-  letter-spacing: 0.1em;
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 110%;
+  line-height: 100%;
   bottom: 52%;
   width: max-content;
 

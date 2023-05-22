@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 import '@/shared/fonts/poppins/poppins.css';
+import '@/shared/fonts/sf-pro-display/sf-pro-display.css';
 
 export const GlobalStyle = createGlobalStyle`
 
