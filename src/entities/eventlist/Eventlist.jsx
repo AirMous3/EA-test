@@ -25,10 +25,22 @@ export const EventList = () => {
 
                 {active && (
                   <S.AccordionInfoWrapper>
-                    <S.AccordionInfoNumber>0{id}</S.AccordionInfoNumber>
-                    <S.AccordionInfoTitle>{title}</S.AccordionInfoTitle>
-                    <S.AccordionInfoDate>{date}</S.AccordionInfoDate>
-                    <S.AccordionButton>More information</S.AccordionButton>
+                    <S.AccordionMInfoWrapper>
+                      <S.AccordionInfoNumber>0{id}</S.AccordionInfoNumber>
+                      <S.AccordionInfoTitle>{title}</S.AccordionInfoTitle>
+                      <S.AccordionInfoDate>{date}</S.AccordionInfoDate>
+
+                      <S.AccordionButton>
+                        {/*  Не знаю куда должна перенаправлять кнопка, по тз не сказано, поэтому пусть будет так)*/}
+                        <a
+                          href="https://egorovagency.by/about#about-team"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          More information
+                        </a>
+                      </S.AccordionButton>
+                    </S.AccordionMInfoWrapper>
                   </S.AccordionInfoWrapper>
                 )}
               </S.AccordionItem>

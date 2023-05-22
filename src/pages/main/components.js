@@ -205,12 +205,17 @@ export const EventButton = styled.button`
 `;
 
 export const GetStarted = styled.div`
+  position: relative;
   height: 192px;
   width: 100%;
   background: ${({ theme }) => theme.colors.background.darkBlue};
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 
   @media (max-width: 768px) {
     height: 160px;
@@ -296,12 +301,19 @@ export const Error = styled.div`
 export const OtherEvents = styled.div`
   position: absolute;
   right: 145px;
+  bottom: 40%;
   font-weight: 400;
   font-size: 20px;
   color: white;
   display: flex;
   align-items: center;
   cursor: pointer;
+
+  @media (max-width: 1200px) {
+    position: static;
+    margin-top: 15px;
+    font-size: 16px;
+  }
 
   &:after {
     display: inline-block;
