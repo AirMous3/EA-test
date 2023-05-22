@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/EA-test/static/css/main.fce38e5c.css",
-    "main.js": "/EA-test/static/js/main.91698d89.js",
+    "main.css": "/EA-test/static/css/main.1c279f7a.css",
+    "main.js": "/EA-test/static/js/main.844f38b5.js",
     "static/media/system-design.jpg": "/EA-test/static/media/system-design.4bbadfc44ef492be823d.jpg",
+    "static/media/SFProDisplay-Semibold.ttf": "/EA-test/static/media/SFProDisplay-Semibold.dfc89e609e62dde18375.ttf",
+    "static/media/SFProDisplay-Regular.ttf": "/EA-test/static/media/SFProDisplay-Regular.6b109fecbc7563467e36.ttf",
     "static/media/hawai-party-image.png": "/EA-test/static/media/hawai-party-image.9e2748f27005e7487b7d.png",
     "static/media/party-on-the-beach.jpg": "/EA-test/static/media/party-on-the-beach.52fc24badc97c286d2d9.jpg",
     "static/media/security.jpg": "/EA-test/static/media/security.3c03a26e55e27a38b67b.jpg",
     "static/media/mafia-party.jpg": "/EA-test/static/media/mafia-party.b2197c934e4983b29757.jpg",
     "static/media/party.jpg": "/EA-test/static/media/party.641246fc12f5248d8489.jpg",
+    "static/media/SFProDisplay-Semibold.woff": "/EA-test/static/media/SFProDisplay-Semibold.340c3a1a6dddb0b99476.woff",
+    "static/media/SFProDisplay-Regular.woff": "/EA-test/static/media/SFProDisplay-Regular.7ee14c637e39445d7093.woff",
+    "static/media/SFProDisplay-Semibold.woff2": "/EA-test/static/media/SFProDisplay-Semibold.3926eb65ce4420a81930.woff2",
+    "static/media/SFProDisplay-Regular.woff2": "/EA-test/static/media/SFProDisplay-Regular.d5ff9f6824d2c6607361.woff2",
     "static/media/Poppinsextrabold.ttf": "/EA-test/static/media/Poppinsextrabold.22f99022f3fd6d9651d5.ttf",
     "static/media/Poppinsbold.ttf": "/EA-test/static/media/Poppinsbold.8ac6f63215ea3458d1fd.ttf",
     "static/media/Poppinspoppins-boldsemibold.ttf": "/EA-test/static/media/Poppinspoppins-boldsemibold.89dc8c3f13c763e9540c.ttf",
@@ -41,11 +47,11 @@
     "static/media/cross.svg": "/EA-test/static/media/cross.51db4c1f230d10f8c6579e47cb1ca1a1.svg",
     "index.html": "/EA-test/index.html",
     "static/media/arrow-icon.svg": "/EA-test/static/media/arrow-icon.a6e75fccc7be500982e5a4f5250e1d55.svg",
-    "main.fce38e5c.css.map": "/EA-test/static/css/main.fce38e5c.css.map",
-    "main.91698d89.js.map": "/EA-test/static/js/main.91698d89.js.map"
+    "main.1c279f7a.css.map": "/EA-test/static/css/main.1c279f7a.css.map",
+    "main.844f38b5.js.map": "/EA-test/static/js/main.844f38b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.fce38e5c.css",
-    "static/js/main.91698d89.js"
+    "static/css/main.1c279f7a.css",
+    "static/js/main.844f38b5.js"
   ]
 }
