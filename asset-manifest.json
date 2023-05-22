@@ -1,7 +1,13 @@
 {
   "files": {
     "main.css": "/EA-test/static/css/main.fce38e5c.css",
-    "main.js": "/EA-test/static/js/main.294d1c31.js",
+    "main.js": "/EA-test/static/js/main.f8f565ee.js",
+    "static/media/system-design.jpg": "/EA-test/static/media/system-design.4bbadfc44ef492be823d.jpg",
+    "static/media/hawai-party-image.png": "/EA-test/static/media/hawai-party-image.9e2748f27005e7487b7d.png",
+    "static/media/party-on-the-beach.jpg": "/EA-test/static/media/party-on-the-beach.52fc24badc97c286d2d9.jpg",
+    "static/media/security.jpg": "/EA-test/static/media/security.3c03a26e55e27a38b67b.jpg",
+    "static/media/mafia-party.jpg": "/EA-test/static/media/mafia-party.b2197c934e4983b29757.jpg",
+    "static/media/party.jpg": "/EA-test/static/media/party.641246fc12f5248d8489.jpg",
     "static/media/Poppinsextrabold.ttf": "/EA-test/static/media/Poppinsextrabold.22f99022f3fd6d9651d5.ttf",
     "static/media/Poppinsbold.ttf": "/EA-test/static/media/Poppinsbold.8ac6f63215ea3458d1fd.ttf",
     "static/media/Poppinspoppins-boldsemibold.ttf": "/EA-test/static/media/Poppinspoppins-boldsemibold.89dc8c3f13c763e9540c.ttf",
@@ -36,10 +42,10 @@
     "index.html": "/EA-test/index.html",
     "static/media/arrow-icon.svg": "/EA-test/static/media/arrow-icon.a6e75fccc7be500982e5a4f5250e1d55.svg",
     "main.fce38e5c.css.map": "/EA-test/static/css/main.fce38e5c.css.map",
-    "main.294d1c31.js.map": "/EA-test/static/js/main.294d1c31.js.map"
+    "main.f8f565ee.js.map": "/EA-test/static/js/main.f8f565ee.js.map"
   },
   "entrypoints": [
     "static/css/main.fce38e5c.css",
-    "static/js/main.294d1c31.js"
+    "static/js/main.f8f565ee.js"
   ]
 }
