@@ -68,7 +68,6 @@ export const AccordionTitleWrapper = styled.div`
   position: relative;
   z-index: 10;
   cursor: pointer;
-  padding: 15px 15px 50px;
   background: ${({ isActive }) =>
     isActive
       ? '#162c4e'
@@ -77,16 +76,18 @@ export const AccordionTitleWrapper = styled.div`
   justify-content: center;
   height: 100%;
   width: 85px;
-  box-sizing: border-box;
+  min-width: 85px;
   transition: background 0.4s ease-out;
 
   @media (max-width: 1240px) {
     width: 100%;
     height: 85px;
+    min-height: 85px;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-end;
     padding: 15px 15px 15px;
+    box-sizing: border-box;
   }
   @media (max-width: 480px) {
     height: 64px;
@@ -150,10 +151,12 @@ export const AccordionInfoWrapper = styled.div`
   @media (max-width: 1240px) {
     width: 100%;
     height: 192px;
+    min-height: 192px;
   }
   @media (max-width: 480px) {
     width: 100%;
     height: 158px;
+    min-height: 158px;
     padding-left: 20px;
   }
 `;
@@ -191,7 +194,7 @@ export const AccordionInfoTitle = styled.div`
     font-size: 18px;
   }
   @media (max-width: 480px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 `;
 
