@@ -19,8 +19,8 @@ export const Title = styled.h2`
 export const EventsWrapper = styled.div`
   display: flex;
   justify-content: center;
-  padding-left: 108px;
-  padding-right: 108px;
+  padding-left: 28px;
+  padding-right: 28px;
 `;
 
 export const Accordion = styled.ul`
@@ -75,6 +75,10 @@ export const AccordionNumber = styled.div`
   font-weight: 500;
   font-size: 40px;
   color: white;
+
+  @media (max-width: 1450px) {
+    font-size: 32px;
+  }
 `;
 
 export const AccordionInfoWrapper = styled.div`

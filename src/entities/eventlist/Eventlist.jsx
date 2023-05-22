@@ -6,7 +6,7 @@ import { eventsConfig } from './config';
 export const EventList = () => {
   const [isActive, setActive] = useState(1);
   return (
-    <S.Container>
+    <S.Container id="allEvents">
       <S.Title>all events</S.Title>
 
       <S.EventsWrapper>

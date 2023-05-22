@@ -211,7 +211,6 @@ export const GetStarted = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 
   @media (max-width: 768px) {
     height: 160px;
@@ -292,4 +291,26 @@ export const Error = styled.div`
   position: absolute;
   bottom: -30px;
   color: red;
+`;
+
+export const OtherEvents = styled.div`
+  position: absolute;
+  right: 145px;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:after {
+    display: inline-block;
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-image: url(${arrowIcon});
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    transform: rotate(90deg);
+  }
 `;

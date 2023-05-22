@@ -1,4 +1,5 @@
 import { useContext, useState } from 'react';
+import { Link } from 'react-scroll';
 
 import { EventList } from '@/entities';
 import { isEmailValid } from '@/features';
@@ -65,6 +66,10 @@ export const Main = () => {
           <S.ArrowInputButton onClick={handleSendEmail} />
           {error && <S.Error>Woops, check your email</S.Error>}
         </S.InputWrapper>
+
+        <Link to="allEvents" smooth={true}>
+          <S.OtherEvents>Other Events</S.OtherEvents>
+        </Link>
       </S.GetStarted>
 
       <EventList />
