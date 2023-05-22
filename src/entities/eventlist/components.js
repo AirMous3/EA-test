@@ -200,9 +200,11 @@ export const AccordionInfoTitle = styled.div`
   font-weight: 600;
   font-size: 24px;
   color: white;
+  max-width: 330px;
 
   @media (max-width: 1240px) {
     margin-bottom: -10px;
+    max-width: unset;
   }
   @media (max-width: 768px) {
     font-size: 18px;
