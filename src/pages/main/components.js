@@ -43,6 +43,7 @@ export const Container = styled.section`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 `;
 
 export const LeftCornerImage = styled.div`
@@ -191,7 +192,7 @@ export const EventButton = styled.button`
   align-items: center;
   justify-content: center;
   margin-top: 12px;
-  margin-bottom: 76px;
+  margin-bottom: 82px;
 
   &:after {
     display: inline-block;
@@ -212,10 +213,6 @@ export const GetStarted = styled.div`
   align-items: center;
   flex-direction: column;
 
-  @media (min-width: 1280px) {
-    position: fixed;
-    bottom: 0;
-  }
   @media (max-width: 768px) {
     height: 160px;
   }

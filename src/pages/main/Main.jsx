@@ -1,5 +1,6 @@
 import { useContext, useState } from 'react';
 
+import { EventList } from '@/entities';
 import { isEmailValid } from '@/features';
 import { ModalContext } from '@/shared';
 import { Timer } from '@/widgets';
@@ -65,6 +66,8 @@ export const Main = () => {
           {error && <S.Error>Woops, check your email</S.Error>}
         </S.InputWrapper>
       </S.GetStarted>
+
+      <EventList />
     </S.Container>
   );
 };

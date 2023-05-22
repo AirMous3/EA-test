@@ -34,7 +34,7 @@ export const Timer = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
-    }, 1000);
+    }, 10);
 
     return () => clearTimeout(timer);
   });
