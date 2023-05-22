@@ -80,8 +80,8 @@ export const Main = () => {
           {error && <S.Error>Woops, check your email</S.Error>}
         </S.InputWrapper>
 
-        <Link to="allEvents" smooth={true}>
-          <S.OtherEvents>Other Events</S.OtherEvents>
+        <Link to="allEvents" smooth={true} duration={600}>
+          ><S.OtherEvents>Other Events</S.OtherEvents>
         </Link>
       </S.GetStarted>
 
