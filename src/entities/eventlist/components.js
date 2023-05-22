@@ -154,7 +154,8 @@ export const AccordionInfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: end;
-  width: 37%;
+  width: 364px;
+  min-width: 364px;
   height: 100%;
   background: rgba(18, 18, 18, 0.8);
   backdrop-filter: blur(20px);
@@ -165,6 +166,7 @@ export const AccordionInfoWrapper = styled.div`
     width: 100%;
     height: 192px;
     min-height: 192px;
+    min-width: unset;
   }
   @media (max-width: 480px) {
     width: 100%;
