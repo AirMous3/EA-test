@@ -81,7 +81,7 @@ export const Main = () => {
         </S.InputWrapper>
 
         <Link to="allEvents" smooth={true} duration={600}>
-          ><S.OtherEvents>Other Events</S.OtherEvents>
+          <S.OtherEvents>Other Events</S.OtherEvents>
         </Link>
       </S.GetStarted>
 

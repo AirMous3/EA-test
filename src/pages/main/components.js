@@ -277,6 +277,9 @@ export const ArrowInputButton = styled.button`
   background: ${({ theme }) => theme.colors.background.red};
   border-radius: 50%;
   margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:after {
     display: inline-block;
@@ -285,6 +288,7 @@ export const ArrowInputButton = styled.button`
     width: 20px;
     background-image: url(${arrowIcon});
     background-repeat: no-repeat;
+    background-position: center;
   }
 
   @media (max-width: 768px) {
