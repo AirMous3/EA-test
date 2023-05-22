@@ -25,6 +25,11 @@ export const EventsWrapper = styled.div`
   justify-content: center;
   padding-left: 28px;
   padding-right: 28px;
+
+  @media (max-width: 480px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 `;
 
 export const Accordion = styled.ul`
@@ -36,11 +41,14 @@ export const Accordion = styled.ul`
     width: 100%;
     align-items: center;
   }
+  @media (max-width: 480px) {
+    min-width: 320px;
+  }
 `;
 
 export const AccordionItem = styled.li`
   position: relative;
-  width: ${({ isActive }) => (isActive ? '995px' : '85px')};
+  width: ${({ $isActive }) => ($isActive ? '995px' : '85px')};
   display: flex;
   height: 682px;
   transition: width 0.9s ease-out;
@@ -51,7 +59,7 @@ export const AccordionItem = styled.li`
   @media (max-width: 1240px) {
     width: 100%;
     max-width: 1000px;
-    height: ${({ isActive }) => (isActive ? '660px' : '85px')};
+    height: ${({ $isActive }) => ($isActive ? '660px' : '85px')};
     flex-direction: column-reverse;
     margin-right: unset;
     margin-bottom: 4px;
@@ -60,7 +68,7 @@ export const AccordionItem = styled.li`
   }
 
   @media (max-width: 480px) {
-    height: ${({ isActive }) => (isActive ? '440px' : '64px')};
+    height: ${({ $isActive }) => ($isActive ? '440px' : '64px')};
   }
 `;
 
@@ -68,8 +76,8 @@ export const AccordionTitleWrapper = styled.div`
   position: relative;
   z-index: 10;
   cursor: pointer;
-  background: ${({ isActive }) =>
-    isActive
+  background: ${({ $isActive }) =>
+    $isActive
       ? '#162c4e'
       : 'linear-gradient(180deg, rgba(22, 44, 78, 0) 0%, #162C4E 100%);'};
   display: flex;
@@ -91,6 +99,7 @@ export const AccordionTitleWrapper = styled.div`
   }
   @media (max-width: 480px) {
     height: 64px;
+    min-height: 64px;
   }
 `;
 

@@ -14,9 +14,9 @@ export const EventList = () => {
           {eventsConfig.map(({ img, title, date, id }) => {
             const active = isActive === id;
             return (
-              <S.AccordionItem isActive={active} img={img} key={id}>
+              <S.AccordionItem  $isActive={active} img={img} key={id}>
                 <S.AccordionTitleWrapper
-                  isActive={active}
+                    $isActive={active}
                   onClick={() => setActive(id)}
                 >
                   <S.AccordionTitle>{title}</S.AccordionTitle>

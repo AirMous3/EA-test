@@ -17,8 +17,17 @@ export const Main = () => {
     setInputText(e.currentTarget.value);
     setError(false);
   };
-  const handleSendEmail = () => {
+
+  const handleSendEmail = async () => {
     if (isEmailValid(inputText)) {
+      /*Не совсем понятно условие "отправку данных с помощью ajax.", куда отправлять эти данные, поэтому сделал
+       * промисификацию(имитацию запроса на сервер и ожидания ответа)*/
+      await new Promise((resolve) => {
+        setTimeout(() => {
+          resolve();
+        }, 2000);
+      });
+
       setVisible(true);
       setInputText('');
     } else {
@@ -26,11 +35,15 @@ export const Main = () => {
     }
   };
 
+  const handleRedirectToMain = () => {
+    window.location.href = '/EA-test';
+  };
+
   return (
     <S.Container>
       <S.LeftCornerImage />
       <S.RightCornerImage />
-      <S.Logo />
+      <S.Logo onClick={handleRedirectToMain} />
 
       <S.TitleWrapper>
         <S.Title>Under Construction</S.Title>

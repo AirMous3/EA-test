@@ -9,7 +9,7 @@ export const Modal = () => {
   const { setVisible, visible } = useContext(ModalContext);
   return (
     <Portal>
-      <S.Mask visible={visible} />
+      <S.Mask $visible={visible} />
       {visible && (
         <S.Modal>
           <S.ModalWrapper>

@@ -12,8 +12,8 @@ export const Mask = styled.div`
   left: 0;
   z-index: 10000;
 
-  ${({ visible }) =>
-    visible ? 'opacity: 1;  ' : 'opacity: 0; pointer-events: none'};
+  ${({ $visible }) =>
+    $visible ? 'opacity: 1;  ' : 'opacity: 0; pointer-events: none'};
 `;
 
 export const Modal = styled.div`

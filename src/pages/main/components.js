@@ -104,6 +104,7 @@ export const Logo = styled.div`
   margin-top: 60px;
   margin-bottom: 74px;
   animation: ${fadeIn} 1s;
+  cursor: pointer;
 
   @media (max-width: 480px) {
     margin-bottom: 55px;
