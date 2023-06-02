@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/EA-test/static/css/main.1c279f7a.css",
-    "main.js": "/EA-test/static/js/main.c64591f1.js",
+    "main.js": "/EA-test/static/js/main.0e7da9b4.js",
     "static/media/system-design.jpg": "/EA-test/static/media/system-design.4bbadfc44ef492be823d.jpg",
     "static/media/SFProDisplay-Semibold.ttf": "/EA-test/static/media/SFProDisplay-Semibold.dfc89e609e62dde18375.ttf",
     "static/media/SFProDisplay-Regular.ttf": "/EA-test/static/media/SFProDisplay-Regular.6b109fecbc7563467e36.ttf",
@@ -44,14 +44,14 @@
     "static/media/Poppinsblack.woff2": "/EA-test/static/media/Poppinsblack.23d926ac0ee0ceef6734.woff2",
     "static/media/Poppinsextralight.woff2": "/EA-test/static/media/Poppinsextralight.2ccf3e77897827c13a38.woff2",
     "static/media/Poppinsthin.woff2": "/EA-test/static/media/Poppinsthin.268cab18feaccc3c1c61.woff2",
-    "static/media/cross.svg": "/EA-test/static/media/cross.51db4c1f230d10f8c6579e47cb1ca1a1.svg",
+    "static/media/cross.svg": "/EA-test/static/media/cross.e3befa32f0b7dc80952c625df30e7a3b.svg",
     "index.html": "/EA-test/index.html",
-    "static/media/arrow-icon.svg": "/EA-test/static/media/arrow-icon.a6e75fccc7be500982e5a4f5250e1d55.svg",
+    "static/media/arrow-icon.svg": "/EA-test/static/media/arrow-icon.a81ebae5012c14756c5f35e251c43799.svg",
     "main.1c279f7a.css.map": "/EA-test/static/css/main.1c279f7a.css.map",
-    "main.c64591f1.js.map": "/EA-test/static/js/main.c64591f1.js.map"
+    "main.0e7da9b4.js.map": "/EA-test/static/js/main.0e7da9b4.js.map"
   },
   "entrypoints": [
     "static/css/main.1c279f7a.css",
-    "static/js/main.c64591f1.js"
+    "static/js/main.0e7da9b4.js"
   ]
 }
