@@ -42,22 +42,22 @@ export const Timer = () => {
   return (
     <S.Container>
       <S.Item>
-        <S.Time>{timeLeft.days}</S.Time>
+        <S.Time>{timeLeft.days || "0"}</S.Time>
         <S.TimeUnderline>{isTabletOrMobile ? 'DD' : 'Days'}</S.TimeUnderline>
       </S.Item>
       :
       <S.Item>
-        <S.Time>{timeLeft.hours}</S.Time>
+        <S.Time>{timeLeft.hours || "0"}</S.Time>
         <S.TimeUnderline>{isTabletOrMobile ? 'HH' : 'Hours'}</S.TimeUnderline>
       </S.Item>
       :
       <S.Item>
-        <S.Time>{timeLeft.minutes}</S.Time>
+        <S.Time>{timeLeft.minutes || "0"}</S.Time>
         <S.TimeUnderline>{isTabletOrMobile ? 'MM' : 'Minutes'}</S.TimeUnderline>
       </S.Item>
       :
       <S.Item>
-        <S.Time>{timeLeft.seconds}</S.Time>
+        <S.Time>{timeLeft.seconds || "0"}</S.Time>
         <S.TimeUnderline>{isTabletOrMobile ? 'SS' : 'Seconds'}</S.TimeUnderline>
       </S.Item>
     </S.Container>
